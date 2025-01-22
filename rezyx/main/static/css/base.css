@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
 
-body{
+:root {
+    --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.363);
+}
+
+body {
     font-family: "Carrois Gothic", sans-serif;
     font-size: 18px;
     padding: 0;
-    margin; 0;
+    margin: 0;
     overflow-x: hidden;
 }
 
@@ -29,12 +33,69 @@ h2 {
 
 h3 {
     font-size: 36px;
+
 }
 
 h5 {
     font-size: 18px;
     margin: 0;
     font-weight: 600;
+}
+
+form select {
+    background-color: #fff;
+    border: none;
+}
+
+form select:focus {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+input:focus {
+    box-shadow: none;
+}
+
+.window {
+    width: 1210px;
+    height: 600px;
+    margin-top: 100px;
+    border: 1px solid #00000036;
+    border-radius: 10px;
+}
+
+.window-login {
+    width: 1000px;
+    height: 600px;
+    margin-top: 100px;
+    border: 1px solid #00000036;
+    border-radius: 10px;
+}
+
+.windowp {
+    width: 1210px;
+    height: 600px;
+    margin-top: 100px;
+    border: 1px solid #00000036;
+    border-radius: 10px;
+    background-image: url(../img/window.png);
+    background-repeat: no-repeat;
+}
+
+.header {
+    height: 80px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header-list {
+    text-transform: uppercase;
+}
+
+.heavy-logo {
+    position: fixed;
+    top: 0.5%;
+    left: 44.5%;
 }
 
 .header-container {
@@ -52,3 +113,29 @@ h5 {
     margin: 0 auto;
 }
 
+.home {
+    align-items: center;
+}
+
+.home-title {
+    margin-top: 210px;
+    margin-bottom: 50px;
+}
+
+.home-cards {
+    width: 650px;
+    overflow-x: hidden;
+}
+
+.home-card {
+    width: 200px;
+    height: 325px;
+    border: 1px solid #00000027;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    background-color: #fff;
+}
+
+.home-card:hover {
+    border: 1px solid #000000;
+}
