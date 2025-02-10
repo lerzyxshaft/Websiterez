@@ -259,7 +259,11 @@ input:focus {
     height: 50px;
     border: 1px solid #00000027;
     border-radius: 5px;
-    background-image: url(../img/btnh.png);
     transition: all 0.4s ease;
     z-index: 2;
+    margin-top: 20px;
+}
+
+cart-btn:hoover {
+    border: 1px solid #000;
 }
