@@ -25,8 +25,8 @@ def product_list(request, category_slug=None):
     category = None
     categories = Category.objects.all
     paginator = Paginator(products, 1)
+    products = Product.objects.filter(available=True)
     current_page = paginator.page(int(page))
-    products = Product.objects.filter(available = True)
     if category_slug:
         category = get_object_or_404(Category,
                                      slug=category_slug)
